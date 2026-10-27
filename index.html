@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <style>
+        /* Resets margins and locks the screen to a solid black backdrop */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        /* Black button with a crisp white outline and white text */
+        .puzzle-btn {
+            background-color: #000000;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        /* Subtle hover effect so the player knows it is interactive */
+        .puzzle-btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The interactive game button -->
+    <button class="puzzle-btn" onclick="startPuzzle()">Start</button>
+
+    <script>
+        function startPuzzle() {
+            // Opens the target page in a brand new browser tab
+            window.open('https://github.io', '_blank');
+        }
+    </script>
+
+</body>
+</html>
